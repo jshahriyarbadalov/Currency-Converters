@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Currency Conventer</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="updating_dates">Updating dates...</string>
+    <string name="load_wait">Loading please wait...</string>
+    <string name="no_connection">No internet connection!</string>
+</resources>
