@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.currencyconventer">
+    package="com.shahriyar.currencyconventer">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name="com.shahriyar.currencyconventer.AppActivity"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
         android:screenOrientation="portrait"
+        android:supportsRtl="true"
         android:theme="@style/Theme.CurrencyConventer">
-        <activity android:name=".screen.ui.CurrencyActivity">
+        <activity android:name="com.shahriyar.currencyconventer.screen.ui.view.CurrencyNameRatesActivity"
+            android:parentActivityName=".screen.ui.view.CurrencyActivity"
+            ></activity>
+        <activity android:name="com.shahriyar.currencyconventer.screen.ui.view.CurrencyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
